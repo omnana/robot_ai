@@ -263,7 +263,7 @@ flowchart LR
 		"move_speed": 200,
 		"attack_power": 15,
 		"attack_speed": 3,
-		"bullet_speed": 500
+		"bullet_speed": 499
 	}
 ]
 ```
