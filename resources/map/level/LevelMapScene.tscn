@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://cvl4yxh3o2mrd"]
 
 [ext_resource type="Script" uid="uid://drh623k3iqkkc" path="res://game/map/level/LevelMapScene.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://dw0jb07rgo44d" path="res://resources/sprites/map/img_bj.png" id="2"]
-[ext_resource type="Script" uid="uid://b8kqjd8c5mhjx" path="res://framecore/map/infinite_map.gd" id="3"]
+[ext_resource type="Script" uid="uid://b8kqjd8c5mhjx" path="res://framecore/map/infinite_map.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://dw0jb07rgo44d" path="res://resources/sprites/map/img_bj.png" id="3"]
 [ext_resource type="PackedScene" uid="uid://bh53vsn20cugf" path="res://resources/prefabs/character/player.tscn" id="4"]
 
 [node name="LevelMapScene" type="Node2D" unique_id=1661782728]
 script = ExtResource("1")
 
 [node name="InfiniteMap" type="Node2D" parent="." unique_id=388379759]
-script = ExtResource("3")
-background_texture = ExtResource("2")
+script = ExtResource("2")
+background_texture = ExtResource("3")
 
 [node name="MapPlayer" parent="." unique_id=1310551549 instance=ExtResource("4")]

@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://dtooltip001"]
 
-[ext_resource type="Script" uid="uid://dmhcekauo3is6" path="res://framecore/component/ui/advanced/tooltip.gd" id="1_tooltip"]
+[ext_resource type="Script" uid="uid://dmhcekauo3is6" path="res://framecore/component/ui/advanced/tooltip.gd" id="1"]
 
-[node name="Tooltip" type="Control"]
+[node name="Tooltip" type="Control" unique_id=1665048703]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_tooltip")
+script = ExtResource("1")
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=542600751]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,7 +17,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Content" type="Label" parent="PanelContainer"]
+[node name="Content" type="Label" parent="PanelContainer" unique_id=766107679]
 layout_mode = 2
 text = "提示文本"
 horizontal_alignment = 1

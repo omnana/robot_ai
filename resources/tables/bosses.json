@@ -2,7 +2,7 @@
 	{
 		"id": "angry_bull",
 		"name": "愤怒公牛",
-		"max_hp": 600,
+		"max_hp": 3600,
 		"dash_speed": 1000,
 		"telegraph_time": 0.7,
 		"stun_time": 0.3,

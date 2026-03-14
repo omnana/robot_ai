@@ -1,16 +1,16 @@
 extends UIPanel
-## 登录面板：游戏登录界面
 
-@onready var login_button: TextureButton = $VBoxContainer/LoginButton
-@onready var exit_button: TextureButton = $VBoxContainer/ExitButton
 
-func _ready() -> void:
-	login_button.pressed.connect(_on_login_button_pressed)
-	exit_button.pressed.connect(_on_exit_button_pressed)
+@onready var login_button: TextureButton = $VBoxContainer / LoginButton
+@onready var exit_button: TextureButton = $VBoxContainer / ExitButton
 
-func _on_login_button_pressed() -> void:
-	UIManager.close_all()
-	UIManager.open(UIKeys.MENU_PANEL())
+func _ready() -> void :
+    login_button.pressed.connect(_on_login_button_pressed)
+    exit_button.pressed.connect(_on_exit_button_pressed)
 
-func _on_exit_button_pressed() -> void:
-	get_tree().quit()
+func _on_login_button_pressed() -> void :
+    UIManager.close_all()
+    UIManager.open(UIKeys.MENU_PANEL())
+
+func _on_exit_button_pressed() -> void :
+    get_tree().quit()

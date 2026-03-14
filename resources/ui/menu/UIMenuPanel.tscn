@@ -3,13 +3,13 @@
 [ext_resource type="Script" uid="uid://cp3jh13q7lgwn" path="res://game/ui/menu/UIMenuPanel.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://c16vkjqp8kpli" path="res://resources/sprites/menu/img_dt.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://cnqw1n2w1n37i" path="res://resources/sprites/menu/img_dih.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://ko10l7jkiv0s" path="res://resources/sprites/menu/img_ditu.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://c85wxcu3x3jom" path="res://resources/sprites/menu/img_dil.png" id="5"]
-[ext_resource type="Texture2D" uid="uid://hticn0bo6hco" path="res://resources/sprites/menu/img_zhuangbei.png" id="6"]
-[ext_resource type="Script" uid="uid://blghl8nx0esln" path="res://framecore/component/ui/normal/button_sound.gd" id="6_iad0f"]
-[ext_resource type="Texture2D" uid="uid://caos3oi04em7b" path="res://resources/sprites/menu/img_hdih.png" id="7"]
-[ext_resource type="Texture2D" uid="uid://cluvgecrmvrd4" path="res://resources/sprites/menu/img_tuichu.png" id="8"]
-[ext_resource type="Script" uid="uid://cbmxso7l3b1ep" path="res://framecore/component/ui/normal/hover_scale.gd" id="9"]
+[ext_resource type="Script" uid="uid://cbmxso7l3b1ep" path="res://framecore/component/ui/normal/hover_scale.gd" id="4"]
+[ext_resource type="Texture2D" uid="uid://ko10l7jkiv0s" path="res://resources/sprites/menu/img_ditu.png" id="5"]
+[ext_resource type="Script" uid="uid://blghl8nx0esln" path="res://framecore/component/ui/normal/button_sound.gd" id="6"]
+[ext_resource type="Texture2D" uid="uid://c85wxcu3x3jom" path="res://resources/sprites/menu/img_dil.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://hticn0bo6hco" path="res://resources/sprites/menu/img_zhuangbei.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://caos3oi04em7b" path="res://resources/sprites/menu/img_hdih.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cluvgecrmvrd4" path="res://resources/sprites/menu/img_tuichu.png" id="10"]
 
 [node name="UIMenuPanel" type="Control" unique_id=556599349]
 layout_mode = 3
@@ -44,7 +44,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture_normal = ExtResource("3")
 stretch_mode = 5
-script = ExtResource("9")
+script = ExtResource("4")
 
 [node name="Label" type="Label" parent="ButtonContainer/LevelButton" unique_id=1330404023]
 layout_mode = 0
@@ -66,7 +66,7 @@ offset_left = 811.5
 offset_top = 117.5
 offset_right = 1041.5
 offset_bottom = 332.5
-texture = ExtResource("4")
+texture = ExtResource("5")
 stretch_mode = 5
 
 [node name="ButtonSound" type="Control" parent="ButtonContainer/LevelButton" unique_id=116235133]
@@ -75,14 +75,14 @@ offset_left = 811.5
 offset_top = 117.5
 offset_right = 811.5
 offset_bottom = 117.5
-script = ExtResource("6_iad0f")
+script = ExtResource("6")
 
 [node name="EquipButton" type="TextureButton" parent="ButtonContainer" unique_id=1197637635]
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("5")
+texture_normal = ExtResource("7")
 stretch_mode = 5
-script = ExtResource("9")
+script = ExtResource("4")
 
 [node name="Label" type="Label" parent="ButtonContainer/EquipButton" unique_id=43402162]
 layout_mode = 0
@@ -104,7 +104,7 @@ offset_left = 524.5
 offset_top = 45.5
 offset_right = 761.5
 offset_bottom = 274.5
-texture = ExtResource("6")
+texture = ExtResource("8")
 stretch_mode = 5
 
 [node name="ButtonSound" type="Control" parent="ButtonContainer/EquipButton" unique_id=1686855520]
@@ -113,14 +113,14 @@ offset_left = 524.5
 offset_top = 45.5
 offset_right = 524.5
 offset_bottom = 45.5
-script = ExtResource("6_iad0f")
+script = ExtResource("6")
 
 [node name="ExitButton" type="TextureButton" parent="ButtonContainer" unique_id=798175507]
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("7")
+texture_normal = ExtResource("9")
 stretch_mode = 5
-script = ExtResource("9")
+script = ExtResource("4")
 
 [node name="Label" type="Label" parent="ButtonContainer/ExitButton" unique_id=1325391666]
 layout_mode = 0
@@ -142,7 +142,7 @@ offset_left = 818.5
 offset_top = 120.5
 offset_right = 1041.5
 offset_bottom = 332.5
-texture = ExtResource("8")
+texture = ExtResource("10")
 stretch_mode = 5
 
 [node name="ButtonSound" type="Control" parent="ButtonContainer/ExitButton" unique_id=1568785452]
@@ -151,4 +151,4 @@ offset_left = 818.5
 offset_top = 120.5
 offset_right = 818.5
 offset_bottom = 120.5
-script = ExtResource("6_iad0f")
+script = ExtResource("6")

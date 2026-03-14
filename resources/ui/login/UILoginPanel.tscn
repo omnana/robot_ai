@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" uid="uid://cy64x83krixx8" path="res://game/ui/login/UILoginPanel.gd" id="1"]
 [ext_resource type="Texture2D" uid="uid://dqak2bt8c2t3w" path="res://resources/sprites/login/img_d.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://blntx205aq1oq" path="res://resources/sprites/login/img_ks.png" id="3"]
-[ext_resource type="SpriteFrames" uid="uid://bv5osgjqh3ka7" path="res://resources/animation/login/login_animations.tres" id="3_dot00"]
-[ext_resource type="Texture2D" uid="uid://cxgwulwrnel70" path="res://resources/sprites/login/img_js.png" id="4"]
+[ext_resource type="SpriteFrames" uid="uid://bv5osgjqh3ka7" path="res://resources/animation/login/login_animations.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://blntx205aq1oq" path="res://resources/sprites/login/img_ks.png" id="4"]
 [ext_resource type="Script" uid="uid://cbmxso7l3b1ep" path="res://framecore/component/ui/normal/hover_scale.gd" id="5"]
-[ext_resource type="Script" uid="uid://blghl8nx0esln" path="res://framecore/component/ui/normal/button_sound.gd" id="6_j3bpb"]
+[ext_resource type="Script" uid="uid://blghl8nx0esln" path="res://framecore/component/ui/normal/button_sound.gd" id="6"]
+[ext_resource type="Texture2D" uid="uid://cxgwulwrnel70" path="res://resources/sprites/login/img_js.png" id="7"]
 
 [node name="UILoginPanel" type="Control" unique_id=1357874220]
 layout_mode = 3
@@ -31,7 +31,7 @@ stretch_mode = 5
 [node name="Robot" type="AnimatedSprite2D" parent="." unique_id=729048359]
 position = Vector2(570, 651)
 scale = Vector2(1.5, 1.5)
-sprite_frames = ExtResource("3_dot00")
+sprite_frames = ExtResource("3")
 animation = &"idle"
 autoplay = "idle"
 speed_scale = 0.8
@@ -56,22 +56,22 @@ alignment = 1
 custom_minimum_size = Vector2(424, 158)
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("3")
+texture_normal = ExtResource("4")
 stretch_mode = 4
 script = ExtResource("5")
 
 [node name="ButtonSound" type="Control" parent="VBoxContainer/LoginButton" unique_id=2122396703]
 anchors_preset = 0
-script = ExtResource("6_j3bpb")
+script = ExtResource("6")
 
 [node name="ExitButton" type="TextureButton" parent="VBoxContainer" unique_id=1859256335]
 custom_minimum_size = Vector2(424, 158)
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("4")
+texture_normal = ExtResource("7")
 stretch_mode = 4
 script = ExtResource("5")
 
 [node name="ButtonSound" type="Control" parent="VBoxContainer/ExitButton" unique_id=2076531855]
 anchors_preset = 0
-script = ExtResource("6_j3bpb")
+script = ExtResource("6")

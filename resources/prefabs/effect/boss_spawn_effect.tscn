@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://behbl8qgqoup2"]
 
-[ext_resource type="Texture2D" uid="uid://cwnlbidni40g5" path="res://resources/sprites/map/img_w.png" id="1"]
-[ext_resource type="Script" uid="uid://u3870h3tynh3" path="res://game/effect/boss_spawn_effect.gd" id="2"]
+[ext_resource type="Script" uid="uid://u3870h3tynh3" path="res://game/effect/boss_spawn_effect.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cwnlbidni40g5" path="res://resources/sprites/map/img_w.png" id="2"]
 
 [node name="BossSpawnEffect" type="Node2D" unique_id=1402027526]
-script = ExtResource("2")
+script = ExtResource("1")
 
 [node name="WarningSprite" type="Sprite2D" parent="." unique_id=314730819]
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("1")
+texture = ExtResource("2")

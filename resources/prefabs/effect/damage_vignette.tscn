@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene format=3]
 
-[ext_resource type="Script" path="res://game/effect/damage_vignette.gd" id="1"]
+[ext_resource type="Script" uid="uid://cjashd6xyl78h" path="res://game/effect/damage_vignette.gd" id="1"]
 
 [sub_resource type="Shader" id="Shader_vignette"]
 code = "shader_type canvas_item;
@@ -22,20 +22,20 @@ void fragment() {
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vignette"]
 shader = SubResource("Shader_vignette")
-shader_parameter/color = Color(1, 0, 0, 0.5)
+shader_parameter/color = Vector4(1, 0, 0, 1)
 shader_parameter/intensity = 0.6
 shader_parameter/edge_size = 0.25
 
-[node name="DamageVignette" type="CanvasLayer"]
+[node name="DamageVignette" type="CanvasLayer" unique_id=1113834201]
 layer = 100
 script = ExtResource("1")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1316205171]
+material = SubResource("ShaderMaterial_vignette")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-material = SubResource("ShaderMaterial_vignette")
 color = Color(1, 0, 0, 0)

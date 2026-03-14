@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://c8level001"]
 
 [ext_resource type="Script" uid="uid://dhcmhrur3qh4l" path="res://game/ui/level/UILevelPanel.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://dtj5b3mitkk1f" path="res://resources/sprites/common/img_tc.png" id="2"]
-[ext_resource type="Texture2D" uid="uid://yrxryl1vi4st" path="res://resources/sprites/level/img_dt3.png" id="2_tmfxo"]
-[ext_resource type="Texture2D" uid="uid://bh6c55s2qenga" path="res://resources/sprites/common/img_arrow.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://yrxryl1vi4st" path="res://resources/sprites/level/img_dt3.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dtj5b3mitkk1f" path="res://resources/sprites/common/img_tc.png" id="3"]
 [ext_resource type="Script" uid="uid://cbmxso7l3b1ep" path="res://framecore/component/ui/normal/hover_scale.gd" id="4"]
 [ext_resource type="Script" uid="uid://blghl8nx0esln" path="res://framecore/component/ui/normal/button_sound.gd" id="5"]
-[ext_resource type="Texture2D" uid="uid://crkhyop8v5hio" path="res://resources/sprites/level/img_suo.png" id="6_eljx3"]
+[ext_resource type="Texture2D" uid="uid://bh6c55s2qenga" path="res://resources/sprites/common/img_arrow.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://crkhyop8v5hio" path="res://resources/sprites/level/img_suo.png" id="7"]
 
 [node name="UILevelPanel" type="Control" unique_id=500280940]
 layout_mode = 3
@@ -22,7 +22,7 @@ layout_mode = 0
 offset_left = 6.0
 offset_right = 1926.0
 offset_bottom = 1080.0
-texture = ExtResource("2_tmfxo")
+texture = ExtResource("2")
 expand_mode = 1
 stretch_mode = 5
 
@@ -36,7 +36,7 @@ offset_top = 20.0
 offset_right = -20.0
 offset_bottom = 80.0
 grow_horizontal = 0
-texture_normal = ExtResource("2")
+texture_normal = ExtResource("3")
 stretch_mode = 4
 script = ExtResource("4")
 
@@ -54,7 +54,7 @@ offset_top = 468.0
 offset_right = 148.0
 offset_bottom = -493.0
 grow_vertical = 2
-texture_normal = ExtResource("3")
+texture_normal = ExtResource("6")
 stretch_mode = 4
 flip_h = true
 script = ExtResource("4")
@@ -76,7 +76,7 @@ offset_right = -50.0
 offset_bottom = -493.0
 grow_horizontal = 0
 grow_vertical = 2
-texture_normal = ExtResource("3")
+texture_normal = ExtResource("6")
 stretch_mode = 4
 script = ExtResource("4")
 
@@ -135,7 +135,7 @@ offset_bottom = 69.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(55, 69)
-texture = ExtResource("6_eljx3")
+texture = ExtResource("7")
 stretch_mode = 4
 
 [node name="LevelNameLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1008]

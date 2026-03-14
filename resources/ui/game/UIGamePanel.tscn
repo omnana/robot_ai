@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://c8gamehud001"]
 
 [ext_resource type="Script" uid="uid://b52xoch6rb6q" path="res://game/ui/game/UIGamePanel.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://dtj5b3mitkk1f" path="res://resources/sprites/common/img_tc.png" id="2"]
-[ext_resource type="Script" uid="uid://cbmxso7l3b1ep" path="res://framecore/component/ui/normal/hover_scale.gd" id="3"]
-[ext_resource type="Script" uid="uid://blghl8nx0esln" path="res://framecore/component/ui/normal/button_sound.gd" id="4"]
-[ext_resource type="Script" uid="uid://w8g4vvrmf7c6" path="res://game/ui/game/boss_health_bar.gd" id="5"]
+[ext_resource type="Script" uid="uid://w8g4vvrmf7c6" path="res://game/ui/game/boss_health_bar.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://dtj5b3mitkk1f" path="res://resources/sprites/common/img_tc.png" id="3"]
+[ext_resource type="Script" uid="uid://cbmxso7l3b1ep" path="res://framecore/component/ui/normal/hover_scale.gd" id="4"]
+[ext_resource type="Script" uid="uid://blghl8nx0esln" path="res://framecore/component/ui/normal/button_sound.gd" id="5"]
 
 [node name="UIGamePanel" type="Control" unique_id=805961852]
 layout_mode = 3
@@ -38,7 +38,7 @@ offset_right = 288.0
 offset_bottom = 12.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("5")
+script = ExtResource("2")
 
 [node name="ExitButton" type="TextureButton" parent="." unique_id=1380856463]
 layout_mode = 1
@@ -50,11 +50,11 @@ offset_top = 20.0
 offset_right = -20.0
 offset_bottom = 80.0
 grow_horizontal = 0
-texture_normal = ExtResource("2")
+texture_normal = ExtResource("3")
 stretch_mode = 4
-script = ExtResource("3")
+script = ExtResource("4")
 
 [node name="ButtonSound" type="Control" parent="ExitButton" unique_id=1231240005]
 layout_mode = 1
 anchors_preset = 0
-script = ExtResource("4")
+script = ExtResource("5")

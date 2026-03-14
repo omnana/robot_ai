@@ -1,5 +1,5 @@
 extends Node
-## 全局事件总线：定义并派发框架与业务信号，实现模块间解耦通信。
+
 
 signal framework_ready()
 signal game_state_changed(old_state: StringName, new_state: StringName)

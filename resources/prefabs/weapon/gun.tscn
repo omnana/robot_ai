@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://378fe4cfcd0x"]
 
-[ext_resource type="Script" uid="uid://0g5tk4ijjn5i" path="res://game/weapon/gun.gd" id="1_gun"]
-[ext_resource type="Texture2D" uid="uid://5erq6o38wp1v" path="res://resources/sprites/player/gun.png" id="2_sprite"]
+[ext_resource type="Script" uid="uid://0g5tk4ijjn5i" path="res://game/weapon/gun.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://5erq6o38wp1v" path="res://resources/sprites/player/gun.png" id="2"]
 
 [node name="Gun" type="Node2D" unique_id=421710634]
-script = ExtResource("1_gun")
+script = ExtResource("1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1923791923]
-texture = ExtResource("2_sprite")
+texture = ExtResource("2")
 
 [node name="Muzzle" type="Marker2D" parent="." unique_id=474025380]
 position = Vector2(78, -10)
